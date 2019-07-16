@@ -5,8 +5,8 @@ metadata:
 spec:
   tls:
   - hosts:
-      - kubia.example.com
-      secretName: tls-secret
+    - kubia.example.com
+    secretName: tls-secret
   rules:
   - host: kubia.example.com
     http:
