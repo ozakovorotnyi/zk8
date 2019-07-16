@@ -1,0 +1,3 @@
+openssl genrsa -out kubia.example.com-tls.key 2048
+openssl req -new -x509 -key kubia.example.com-tls.key -out kubia.example.com-tls.cert -days 360 -subj /CN=kubia.example.com
+kubectl create secret tls tls-secret --cert=kubia.example.com-tls.cert --key=kubia.example.com-tls.key
