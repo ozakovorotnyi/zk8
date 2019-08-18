@@ -1,0 +1,5 @@
+volumes:
+- name: config
+  configMap:
+    name: fortune-config
+    defaultMode: "6600"
